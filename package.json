@@ -1,0 +1,12 @@
+{
+  "name": "flower-in-a-hurricane",
+  "private": true,
+  "description": "A music video in one GLSL fragment shader, rendered offline frame by frame",
+  "scripts": {
+    "preview": "./preview.sh preview.jpg 33.4 53 92.5 163.6",
+    "render": "./render.sh"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0"
+  }
+}

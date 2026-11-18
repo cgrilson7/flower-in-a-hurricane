@@ -1,0 +1,10 @@
+node_modules/
+parts/
+*.mp4
+*.h264
+*.m4a
+*.wav
+*.mp3
+preview.jpg
+transcript/
+.DS_Store
