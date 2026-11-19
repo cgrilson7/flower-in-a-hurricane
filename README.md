@@ -69,20 +69,6 @@ cue sheet, with every section, drum entry and timed line, is in [`cues.md`](cues
 </tr>
 </table>
 
-## Where it started
-
-The first version drew the band as capsules and spheres on a flat disc. It is still here, as
-[`flower.v1.glsl`](flower.v1.glsl), and [`PLAN.md`](PLAN.md) is the plan that turned one into the other.
-Left is before, right is after, at the same second of the song.
-
-| The singer · 1:32 | The guitarist · 1:35 |
-|:---:|:---:|
-| ![Before and after: the singer](assets/before-after-singer.jpg) | ![Before and after: the guitarist](assets/before-after-guitarist.jpg) |
-| **The island · 0:50** | **A DJ · 0:56** |
-| ![Before and after: the island from the sea](assets/before-after-island.jpg) | ![Before and after: a DJ close-up](assets/before-after-dj.jpg) |
-
-All 45 comparison frames are in [`shots/`](shots) (before) and [`shots-v2/`](shots-v2) (after).
-
 ## Sync
 
 The song is 126 BPM, so a beat is 0.4762 s and a bar is 1.9048 s. One function, `direct(t)`, is the
@@ -124,7 +110,7 @@ ffmpeg -i flower-in-a-hurricane-9x16.mp4 -i your-copy-of-the-song.m4a -c copy -s
 
 ```
 flower.glsl       the video: bodies, island, sea, sky, timeline, light, grade (1,092 lines)
-flower.v1.glsl    the first version, for comparison
+flower.v1.glsl    the first, much simpler version
 cues.md           the song's sections, tempo and timed lines
 PLAN.md           the plan that got from v1 to here
 render/           the offline renderer: host.cjs wraps the scene in a shader, page.html draws
@@ -132,7 +118,7 @@ render/           the offline renderer: host.cjs wraps the scene in a shader, pa
 preview.sh        stills at chosen seconds
 render.sh         the full video
 assets/           the stills and GIFs on this page
-shots/ shots-v2/  45 frames before and after, at the same seconds
+shots-v2/         45 frames across the song (shots/ has the first version's)
 ```
 
 ## Credits
